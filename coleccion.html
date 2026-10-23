@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Colección — Chayil Essentials</title>
+  <meta name="description" content="Colección esencial de prendas atemporales y gorras en sarga de algodón. Diseñadas en Colombia con materias primas nobles.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body data-page-category="all">
+
+  <!-- Barra Superior -->
+  <div class="top-announcement-bar">
+    ENVÍOS GRATUITOS EN PEDIDOS SUPERIORES A 65€ | CAMBIOS Y DEVOLUCIONES SENCILLAS
+  </div>
+
+  <!-- Cabecera -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button type="button" id="mobileMenuToggle" class="menu-toggle-btn" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="site-logo">
+        <span class="logo-brand">CHAYIL</span>
+        <span class="logo-tagline">— COLOMBIA —</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">INICIO</a></li>
+          <li><a href="coleccion.html" class="nav-link active">COLECCIÓN</a></li>
+          <li><a href="camisetas.html" class="nav-link">CAMISETAS</a></li>
+          <li><a href="gorras.html" class="nav-link">GORRAS</a></li>
+          <li><a href="sobre-chayil.html" class="nav-link">SOBRE CHAYIL</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="header-action-btn header-search-btn" aria-label="Buscar prendas">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="bolsa.html" class="header-action-btn open-cart-drawer" aria-label="Ver bolsa de compra">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-badge-count header-cart-badge">2</span>
+        </a>
+        <a href="sobre-chayil.html" class="header-action-btn" aria-label="Mi cuenta / Showroom">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Menú móvil">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <span class="logo-brand" style="font-size: 1.3rem;">CHAYIL</span>
+      <button type="button" class="mobile-menu-close" style="font-size: 1.6rem;">&times;</button>
+    </div>
+    <ul class="mobile-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="coleccion.html" class="nav-link active">Colección Completa</a></li>
+      <li><a href="camisetas.html" class="nav-link">Camisetas Esenciales</a></li>
+      <li><a href="gorras.html" class="nav-link">Gorras Daily Structure</a></li>
+      <li><a href="bolsa.html" class="nav-link">Bolsa de Compra</a></li>
+      <li><a href="sobre-chayil.html" class="nav-link">Sobre Chayil & Historia</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Ruta de navegación">
+        <a href="index.html">INICIO</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>COLECCIÓN COMPLETA</span>
+      </nav>
+
+      <!-- Encabezado de Colección -->
+      <section class="catalog-header-section">
+        <div class="catalog-header-grid">
+          <div class="catalog-header-main">
+            <span class="catalog-capsule-tag">CÁPSULA PERMANENTE • 2025</span>
+            <h1 class="catalog-main-title">Colección Esencial & Gorras</h1>
+          </div>
+          <p class="catalog-header-aside">
+            Prendas cotidianas diseñadas con paleta costera natural, siluetas depuradas y materiales resistentes al ritmo diario.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tabs por Tipo de Prenda -->
+      <div class="catalog-tabs-bar">
+        <button type="button" class="catalog-tab-btn active" data-filter="all">TODAS LAS PIEZAS</button>
+        <button type="button" class="catalog-tab-btn" data-filter="heavyweight">CAMISETAS HEAVYWEIGHT</button>
+        <button type="button" class="catalog-tab-btn" data-filter="relaxed">CAMISETAS RELAXED</button>
+        <button type="button" class="catalog-tab-btn" data-filter="gorras">GORRAS CANVAS</button>
+        <button type="button" class="catalog-tab-btn" data-filter="accesorios">ACCESORIOS</button>
+      </div>
+
+      <!-- Barra de Filtros y Ordenación -->
+      <div class="catalog-toolbar">
+        <div class="toolbar-filters-group">
+          <button type="button" class="filter-dropdown-btn">CATEGORÍA ⮟</button>
+          <button type="button" class="filter-dropdown-btn">TALLA (XS - XXL) ⮟</button>
+          <button type="button" class="filter-dropdown-btn">TONO DE ARENA ⮟</button>
+          <button type="button" class="filter-dropdown-btn">GRAMAJE 180 / 240 GSM ⮟</button>
+        </div>
+        <div class="toolbar-meta-group">
+          <span id="catalogItemCount">Mostrando catálogo completo</span>
+          <div class="sort-select-wrapper">
+            <span>ORDENAR:</span>
+            <select id="sortSelect" class="sort-select" aria-label="Ordenar productos">
+              <option value="popular">MÁS POPULARES</option>
+              <option value="price-asc">PRECIO: MENOR A MAYOR</option>
+              <option value="price-desc">PRECIO: MAYOR A MENOR</option>
+              <option value="rating">MEJOR VALORADAS</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rejilla de Productos Dinámica -->
+      <div class="products-grid-4" id="catalogProductsGrid">
+        <!-- Rellenado dinámicamente mediante js/catalog.js -->
+      </div>
+
+      <!-- Guía Textil Educativa -->
+      <section class="textile-guide-banner">
+        <div class="guide-banner-content">
+          <span class="guide-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 5px;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            GUÍA TEXTIL CHAYIL
+          </span>
+          <h3 class="guide-banner-title">¿240 GSM o 180 GSM? Encuentra el gramaje adecuado a tu rutina</h3>
+          <p class="guide-banner-desc">
+            El gramaje por metro cuadrado define la caída, la transpirabilidad y la presencia arquitectónica del tejido. Diseñamos nuestras piezas pensando en la adaptabilidad entre el clima cálido y los días frescos de costa.
+          </p>
+          <div class="guide-gsm-specs">
+            <span>• 180 GSM: LIGERA, FLUIDA Y VERANIEGA</span>
+            <span>• 240 GSM: ROBUSTA, ESTRUCTURADA Y DURADERA</span>
+          </div>
+        </div>
+        <div class="guide-banner-cta-box">
+          <div class="density-badge">
+            <div class="density-circle">240</div>
+            <div class="density-text">
+              <strong>DENSIDAD ÓPTIMA</strong>
+              <span>Tejido peinado sin impurezas</span>
+            </div>
+          </div>
+          <a href="camisetas.html" class="btn-primary">LEER GUÍA COMPLETA</a>
+        </div>
+      </section>
+
+      <!-- Banner de Pack Trilogía -->
+      <section class="pack-offer-banner">
+        <div class="pack-offer-left">
+          <div class="pack-tags">
+            <span class="pack-tag-pill">VENTAJA EXCLUSIVA</span>
+            <span class="pack-tag-pill">CÁPSULA MODULAR</span>
+          </div>
+          <h2 class="pack-title">Pack Trilogía Esencial</h2>
+          <p class="pack-desc">
+            Combina 3 camisetas esenciales en cualquiera de nuestros tonos y gramajes. Recíbelas presentadas en nuestra emblemática caja kraft reciclada con papel de seda vegetal libre de ácidos.
+          </p>
+          <div class="pack-price-cta-row">
+            <div class="pack-price-box">
+              <span class="pack-price-current">98,00 €</span>
+              <span class="pack-price-old">114,00 €</span>
+              <span class="pack-savings-tag">(AHORRO 15%)</span>
+            </div>
+            <button type="button" class="btn-primary" data-add-to-cart="pack-trilogia" data-size="M">
+              CONFIGURAR TRILOGÍA
+            </button>
+          </div>
+        </div>
+        <div class="pack-photo-box">
+          <img src="assets/images/pack_trilogia.jpg" alt="Pack de tres camisetas en estuche kraft">
+          <span class="pack-photo-badge">INCLUYE ESTUCHE KRAFT</span>
+        </div>
+      </section>
+
+      <!-- Paginación -->
+      <div class="catalog-pagination">
+        <span>Mostrando 1 - 8 de 24 piezas de armario</span>
+        <div class="pagination-numbers">
+          <button type="button" class="page-num-btn" aria-label="Página anterior">&lt;</button>
+          <button type="button" class="page-num-btn active">1</button>
+          <button type="button" class="page-num-btn">2</button>
+          <button type="button" class="page-num-btn">3</button>
+          <button type="button" class="page-num-btn" aria-label="Página siguiente">&gt;</button>
+        </div>
+        <a href="coleccion.html" class="view-all-catalog-link">VER TODO EL CATÁLOGO</a>
+      </div>
+    </div>
+
+      <!-- Franja de Garantías de Colección -->
+    <section class="trust-guarantee-bar">
+      <div class="container trust-guarantee-grid">
+        <div class="trust-item">
+          <span class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12c0-3.35 1.64-6.31 4.15-8.15"></path>
+              <path d="M12 2v20"></path>
+              <path d="M12 12c3.5 0 6-2.5 6-6"></path>
+            </svg>
+          </span>
+          <div class="trust-text">
+            <h6>Algodón Orgánico Certificado</h6>
+            <p>Cultivado sin pesticidas químicos en parcelas regenerativas seleccionadas en la cuenca mediterránea.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="3" width="15" height="13" rx="1"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </span>
+          <div class="trust-text">
+            <h6>Envíos Neutros & 30 Días</h6>
+            <p>Embalaje 100% reciclado sin plásticos de un solo uso y devoluciones gratuitas en península.</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </span>
+          <div class="trust-text">
+            <h6>Garantía de Costuras</h6>
+            <p>Refuerzo doble pespunte en cuello y hombros diseñado para soportar más de 200 lavados sin perder silueta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Completo -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>CHAYIL</h4>
+          <p>
+            Ropa esencial y piezas seleccionadas con calma mediterránea. Sostenibilidad, materiales naturales y arquitectura textil creada para perdurar en el tiempo.
+          </p>
+          <span class="footer-badge-ethical">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12c0-3.35 1.64-6.31 4.15-8.15"></path><path d="M12 2v20"></path></svg>
+            ALGODÓN 100% ORGÁNICO & ÉTICO
+          </span>
+        </div>
+        <div class="footer-col">
+          <h5>EXPLORAR</h5>
+          <ul>
+            <li><a href="coleccion.html">Nueva Temporada</a></li>
+            <li><a href="camisetas.html">Camisetas Pesadas</a></li>
+            <li><a href="gorras.html">Gorras de Algodón</a></li>
+            <li><a href="sobre-chayil.html">Nuestro Taller</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>AYUDA & CONTACTO</h5>
+          <ul>
+            <li><a href="sobre-chayil.html#showroom">Preguntas Frecuentes</a></li>
+            <li><a href="camisetas.html#guia-tallas">Guía de Tallas</a></li>
+            <li><a href="bolsa.html">Estado del Pedido</a></li>
+            <li><a href="sobre-chayil.html#contacto">Contacto Directo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter-box">
+          <h5>BOLETÍN CONSCIENTE</h5>
+          <p>Recibe lanzamientos cápsula y reflexiones sobre diseño atemporal.</p>
+          <form class="footer-input-wrapper newsletter-form">
+            <input type="email" placeholder="Introduce tu correo" required aria-label="Correo para newsletter">
+            <button type="submit" aria-label="Suscribirse">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>© 2025 Chayil Essentials. Todos los derechos reservados.</span>
+        <div class="payment-methods-text">
+          <span>VISA</span><span>MASTERCARD</span><span>APPLE PAY</span><span>KLARNA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

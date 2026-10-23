@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Bolsa de Compra — Chayil Studio</title>
+  <meta name="description" content="Revisa los artículos de tu bolsa de compra en Chayil. Envíos gratuitos a partir de 65€. Empaquetado ecológico sin plásticos.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body data-page="cart">
+
+  <!-- Barra Superior -->
+  <div class="top-announcement-bar">
+    ENVÍOS GRATUITOS EN PEDIDOS SUPERIORES A 65€ | CAMBIOS Y DEVOLUCIONES SENCILLAS
+  </div>
+
+  <!-- Cabecera -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button type="button" id="mobileMenuToggle" class="menu-toggle-btn" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="site-logo">
+        <span class="logo-brand">CHAYIL</span>
+        <span class="logo-tagline">— COLOMBIA —</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">INICIO</a></li>
+          <li><a href="coleccion.html" class="nav-link">COLECCIÓN</a></li>
+          <li><a href="camisetas.html" class="nav-link">CAMISETAS</a></li>
+          <li><a href="gorras.html" class="nav-link">GORRAS</a></li>
+          <li><a href="sobre-chayil.html" class="nav-link">SOBRE CHAYIL</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="header-action-btn header-search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="bolsa.html" class="header-action-btn open-cart-drawer" aria-label="Bolsa">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-badge-count header-cart-badge">2</span>
+        </a>
+        <a href="sobre-chayil.html" class="header-action-btn" aria-label="Perfil">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Menú móvil">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <span class="logo-brand" style="font-size: 1.3rem;">CHAYIL</span>
+      <button type="button" class="mobile-menu-close" style="font-size: 1.6rem;">&times;</button>
+    </div>
+    <ul class="mobile-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="coleccion.html" class="nav-link">Colección Completa</a></li>
+      <li><a href="camisetas.html" class="nav-link">Camisetas Esenciales</a></li>
+      <li><a href="gorras.html" class="nav-link">Gorras Daily Structure</a></li>
+      <li><a href="bolsa.html" class="nav-link active">Bolsa de Compra</a></li>
+      <li><a href="sobre-chayil.html" class="nav-link">Sobre Chayil & Historia</a></li>
+    </ul>
+  </aside>
+
+  <main class="cart-page-section">
+    <div class="container">
+      <!-- Encabezado de la Bolsa -->
+      <div class="cart-page-header">
+        <div class="cart-header-top">
+          <span class="cart-category-tag">CESTA CONSCIENTE</span>
+          <span class="cart-ssl-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            COMPRA PROTEGIDA CON CIFRADO SSL
+          </span>
+        </div>
+        <div class="cart-title-row">
+          <h1 class="cart-main-title">Tu Bolsa de Compra <span id="cartTitleItemCount" style="font-weight: 400; color: var(--text-muted); font-size: 2rem;">(2 artículos)</span></h1>
+        </div>
+      </div>
+
+      <!-- Barra de Envío Gratuito Dinámica -->
+      <div id="cartPageFreeShipping" class="cart-free-shipping-card">
+        <!-- Renderizado dinámico mediante js/cart-page.js -->
+      </div>
+
+      <!-- ESTADO ACTIVO (Con Productos) -->
+      <div id="cartActiveView" class="cart-layout-grid">
+        <!-- Columna Izquierda: Artículos, Upsell, Cupón -->
+        <div class="cart-items-column">
+          <!-- Lista de Artículos -->
+          <div id="cartItemsList" style="display: flex; flex-direction: column; gap: 20px;">
+            <!-- Renderizado dinámico -->
+          </div>
+
+          <!-- Tarjeta de Upsell Inteligente (Calcetines para llegar a envío gratis) -->
+          <div class="cart-upsell-card">
+            <div class="upsell-thumb">
+              <img src="assets/images/cart_socks.jpg" alt="Calcetines acanalados de algodón">
+            </div>
+            <div class="upsell-text">
+              <span class="upsell-label">CONSEJO DE COMPRA</span>
+              <p>¿Añades unos calcetines acanalados de algodón orgánico por <strong>9,00 €</strong> para disfrutar de envío gratis?</p>
+            </div>
+            <button type="button" id="btnAddUpsellSocks" class="btn-upsell-add">+ AÑADIR</button>
+          </div>
+
+          <!-- Bloque de Código Promocional -->
+          <div class="cart-promo-box">
+            <span class="promo-label">¿TIENES UN CÓDIGO PROMOCIONAL O TARJETA DE REGALO?</span>
+            <div class="promo-input-group">
+              <input type="text" id="promoCodeInput" placeholder="Ej. BIENVENIDA10" value="BIENVENIDA10" aria-label="Código promocional">
+              <button type="button" id="btnApplyPromo">APLICAR</button>
+            </div>
+            <div id="promoFeedbackMsg" class="promo-feedback-msg success">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: -2px; margin-right: 4px;"><polyline points="20 6 9 17 4 12"></polyline></svg>Código <strong>BIENVENIDA10</strong> (-10%) aplicado correctamente.
+            </div>
+          </div>
+
+          <a href="coleccion.html" class="continue-shopping-link">
+            ← SEGUIR EXPLORANDO LA COLECCIÓN
+          </a>
+        </div>
+
+        <!-- Columna Derecha: Resumen del Pedido -->
+        <div class="cart-summary-column">
+          <div class="order-summary-card">
+            <h2 class="summary-title">Resumen del Pedido</h2>
+
+            <div class="summary-breakdown-list">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="cartSummarySubtotal">70,00 €</strong>
+              </div>
+
+              <div class="summary-row discount-row" id="cartDiscountRow">
+                <span>Descuento de Bienvenida (-10%)</span>
+                <strong id="cartSummaryDiscount">-7,00 €</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Envío Estándar <span class="shipping-time-tag">2-4 DÍAS</span></span>
+                <span id="cartSummaryShipping"><strong>GRATIS</strong></span>
+              </div>
+
+              <div class="summary-row">
+                <span>Impuestos incluidos (IVA 21%)</span>
+                <span id="cartSummaryTax">10,93 €</span>
+              </div>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total-row">
+              <div class="total-label-box">
+                <span>TOTAL A PAGAR</span>
+                <small>Precios finales garantizados</small>
+              </div>
+              <div class="summary-total-amount" id="cartSummaryTotal">63,00 €</div>
+            </div>
+
+            <!-- Botones de Pago Exprés -->
+            <div class="express-pay-box">
+              <span class="express-pay-label">PAGO RÁPIDO EN 1 CLIC</span>
+              <div class="express-pay-grid">
+                <button type="button" id="btnExpressApple" class="btn-express-apple">
+                   Pay
+                </button>
+                <button type="button" id="btnExpressGpay" class="btn-express-gpay">
+                  G Pay
+                </button>
+              </div>
+            </div>
+
+            <!-- Botón Principal Checkout -->
+            <button type="button" id="btnCheckoutPrimary" class="btn-primary btn-checkout-primary">
+              CONTINUAR CON EL PAGO SEGURO
+            </button>
+
+            <p class="klarna-note">o págalo en 3 plazos de 21,00 € sin intereses con <strong>Klarna</strong>.</p>
+
+            <!-- Garantías de Compra -->
+            <div class="cart-guarantees-list">
+              <div class="cart-guarantee-item">
+                <span class="cg-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg></span>
+                <div class="cg-text">
+                  <strong>30 Días de Cambios Gratuitos</strong>
+                  <p>Prueba tus prendas con total serenidad en casa. Recogida a domicilio sin coste adicional.</p>
+                </div>
+              </div>
+              <div class="cart-guarantee-item">
+                <span class="cg-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></span>
+                <div class="cg-text">
+                  <strong>Empaquetado Libre de Plásticos</strong>
+                  <p>Caja de cartón kraft 100% reciclado y bolsa interior de almidón hidrosoluble compostable.</p>
+                </div>
+              </div>
+              <div class="cart-guarantee-item">
+                <span class="cg-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+                <div class="cg-text">
+                  <strong>Pasarela Cifrada y Confiable</strong>
+                  <p>Transacciones seguras mediante protocolo SSL 256-bit y autenticación biométrica bancaria.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-payments-footer">
+              <span>VISA</span>
+              <span>MASTERCARD</span>
+              <span>AMEX</span>
+              <span>PAYPAL</span>
+              <span>KLARNA</span>
+            </div>
+          </div>
+
+          <!-- Soporte y Ayuda -->
+          <div class="cart-support-box">
+            <div class="support-left">
+              <span class="support-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>
+              <div class="support-text">
+                <strong>¿Dudas con la talla o tejido?</strong>
+                <span>Atención directa por nuestro equipo en Colombia</span>
+              </div>
+            </div>
+            <button type="button" class="btn-open-chat" onclick="window.chayilUI.openChatSupport()">
+              ABRIR CHAT
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESTADO VACÍO (Incentivo a la Compra solicitado) -->
+      <div id="cartEmptyView" class="empty-cart-full-view" style="display: none;">
+        <div class="empty-cart-icon-wrapper">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </div>
+        <h2 class="empty-cart-title">Tu bolsa de compra está vacía</h2>
+        <p class="empty-cart-subtitle">
+          Las mejores prendas empiezan con una elección consciente. Explora nuestra cápsula esencial y encuentra las piezas diseñadas para acompañarte a diario.
+        </p>
+        <div class="empty-shipping-incentive">
+          <span style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            Envíos exprés gratuitos en pedidos superiores a 65,00 €
+          </span>
+        </div>
+
+        <!-- Sugerencias de Compra Rápida para incitar a la compra -->
+        <div class="empty-cart-curated-section">
+          <h4 class="curated-heading">PIEZAS DE CULTO RECOMENDADAS PARA EMPEZAR:</h4>
+          <div class="curated-grid-3">
+            <div class="curated-product-card">
+              <div class="curated-img">
+                <img src="assets/images/prod_tee_arena.jpg" alt="Camiseta Heavyweight">
+              </div>
+              <div class="curated-info">
+                <h5>Camiseta Heavyweight Essential</h5>
+                <span>Algodón 240 GSM • Arena Crudo</span>
+              </div>
+              <div class="curated-bottom">
+                <span class="curated-price">38,00 €</span>
+                <button type="button" class="btn-curated-add" data-add-to-cart="cam-heavyweight-arena" data-size="M">+ Añadir</button>
+              </div>
+            </div>
+
+            <div class="curated-product-card">
+              <div class="curated-img">
+                <img src="assets/images/prod_cap_duna.jpg" alt="Gorra Daily Canvas">
+              </div>
+              <div class="curated-info">
+                <h5>Gorra Daily Canvas Duna</h5>
+                <span>Lona Lavada • Hebilla Latón</span>
+              </div>
+              <div class="curated-bottom">
+                <span class="curated-price">32,00 €</span>
+                <button type="button" class="btn-curated-add" data-add-to-cart="gorra-duna-washed" data-size="Única">+ Añadir</button>
+              </div>
+            </div>
+
+            <div class="curated-product-card">
+              <div class="curated-img">
+                <img src="assets/images/pack_trilogia.jpg" alt="Pack Trilogía">
+              </div>
+              <div class="curated-info">
+                <h5>Pack Trilogía (3 Camisetas)</h5>
+                <span>Estuche Kraft • Ahorro 15%</span>
+              </div>
+              <div class="curated-bottom">
+                <span class="curated-price">98,00 €</span>
+                <button type="button" class="btn-curated-add" data-add-to-cart="pack-trilogia" data-size="M">+ Añadir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="coleccion.html" class="btn-primary" style="padding: 16px 36px;">
+          EXPLORAR LA COLECCIÓN COMPLETA →
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Completo -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>CHAYIL</h4>
+          <p>Ropa esencial y piezas seleccionadas con calma mediterránea. Sostenibilidad, materiales naturales y arquitectura textil creada para perdurar en el tiempo.</p>
+          <span class="footer-badge-ethical"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -2px; margin-right: 4px;"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg> ALGODÓN 100% ORGÁNICO & ÉTICO</span>
+        </div>
+        <div class="footer-col">
+          <h5>EXPLORAR</h5>
+          <ul>
+            <li><a href="coleccion.html">Nueva Temporada</a></li>
+            <li><a href="camisetas.html">Camisetas Pesadas</a></li>
+            <li><a href="gorras.html">Gorras de Algodón</a></li>
+            <li><a href="sobre-chayil.html">Nuestro Taller</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>AYUDA & CONTACTO</h5>
+          <ul>
+            <li><a href="sobre-chayil.html#showroom">Preguntas Frecuentes</a></li>
+            <li><a href="camisetas.html#guia-tallas">Guía de Tallas</a></li>
+            <li><a href="bolsa.html">Estado del Pedido</a></li>
+            <li><a href="sobre-chayil.html#contacto">Contacto Directo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter-box">
+          <h5>BOLETÍN CONSCIENTE</h5>
+          <p>Recibe lanzamientos cápsula y reflexiones sobre diseño atemporal.</p>
+          <form class="footer-input-wrapper newsletter-form">
+            <input type="email" placeholder="Introduce tu correo" required aria-label="Correo para newsletter">
+            <button type="submit" aria-label="Suscribirse">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>© 2025 Chayil Essentials. Todos los derechos reservados.</span>
+        <div class="payment-methods-text">
+          <span>VISA</span><span>MASTERCARD</span><span>APPLE PAY</span><span>KLARNA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart-page.js"></script>
+</body>
+</html>

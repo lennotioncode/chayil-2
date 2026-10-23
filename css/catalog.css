@@ -1,0 +1,607 @@
+/* ==========================================================================
+   CHAYIL - Catalog, Camisetas & Gorras Styles (css/catalog.css)
+   Fidelity match to "Catálogo de Colección", "Camisetas" & "Gorras" previews
+   ========================================================================== */
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  padding: 24px 0 12px 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-nav a {
+  color: var(--text-muted);
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--text-main);
+}
+
+.breadcrumb-separator {
+  color: var(--border-light);
+}
+
+/* Catalog Header Section */
+.catalog-header-section {
+  padding: 20px 0 36px 0;
+}
+
+.catalog-header-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.catalog-header-main {
+  max-width: 680px;
+}
+
+.catalog-capsule-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-terracotta);
+  margin-bottom: 12px;
+}
+
+.catalog-main-title {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text-main);
+}
+
+.catalog-header-aside {
+  max-width: 440px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* Category Filter Tabs Bar */
+.catalog-tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  scrollbar-width: none;
+}
+
+.catalog-tabs-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.catalog-tab-btn {
+  white-space: nowrap;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: var(--radius-xs);
+  background-color: var(--bg-warm);
+  color: var(--text-muted);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-fast);
+}
+
+.catalog-tab-btn:hover {
+  border-color: var(--text-main);
+  color: var(--text-main);
+}
+
+.catalog-tab-btn.active {
+  background-color: var(--text-main);
+  color: var(--text-inverse);
+  border-color: var(--text-main);
+}
+
+/* Secondary Filter Toolbar */
+.catalog-toolbar {
+  background-color: var(--bg-warm-tint);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.toolbar-filters-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.filter-dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xs);
+  padding: 7px 14px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-dropdown-btn:hover {
+  border-color: var(--text-main);
+}
+
+/* Quick Tallas Bar */
+.quick-sizes-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quick-size-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.quick-size-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-xs);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  font-size: 0.72rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.quick-size-btn:hover {
+  border-color: var(--text-main);
+}
+
+.quick-size-btn.active {
+  background-color: var(--text-main);
+  color: var(--text-inverse);
+  border-color: var(--text-main);
+}
+
+/* Toolbar Right Details */
+.toolbar-meta-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.sort-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-select {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xs);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Mid-Catalog Educational Guide Banner */
+.textile-guide-banner {
+  background-color: var(--bg-warm);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 40px 48px;
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.guide-banner-content {
+  max-width: 600px;
+}
+
+.guide-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-terracotta);
+  margin-bottom: 12px;
+}
+
+.guide-banner-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.guide-banner-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.guide-gsm-specs {
+  display: flex;
+  gap: 24px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-main);
+}
+
+.guide-banner-cta-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.density-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.density-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  border: 2px dashed var(--accent-terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.density-text strong {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.density-text span {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Modular Pack Banner (Trilogía) */
+.pack-offer-banner {
+  background-color: var(--bg-warm-tint);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 44px 50px;
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.pack-offer-left .pack-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pack-tag-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-terracotta);
+  background-color: #F8EFEA;
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+}
+
+.pack-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.pack-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 480px;
+}
+
+.pack-price-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.pack-price-box {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.pack-price-current {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.pack-price-old {
+  font-size: 1rem;
+  color: var(--text-subtle);
+  text-decoration: line-through;
+}
+
+.pack-savings-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-terracotta);
+  text-transform: uppercase;
+}
+
+.pack-photo-box {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  position: relative;
+}
+
+.pack-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pack-photo-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background-color: rgba(250, 248, 245, 0.95);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: var(--radius-xs);
+}
+
+/* Anatomy of Garment / Cap Engineering Breakdown */
+.anatomy-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.anatomy-subhead {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.anatomy-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.anatomy-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  max-width: 580px;
+  margin: 0 auto 48px auto;
+  line-height: 1.6;
+}
+
+.anatomy-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  text-align: left;
+}
+
+.anatomy-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.anatomy-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.anatomy-card-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-subtle);
+}
+
+.anatomy-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.anatomy-card-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.anatomy-card-check {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-main);
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+}
+
+/* Pagination */
+.catalog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin-top: 30px;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-num-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.page-num-btn:hover {
+  border-color: var(--border-light);
+}
+
+.page-num-btn.active {
+  background-color: var(--text-main);
+  color: var(--text-inverse);
+}
+
+.view-all-catalog-link {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-main);
+}
+
+/* Trust Guarantee Bottom Bar */
+.trust-guarantee-bar {
+  background-color: var(--bg-warm);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.trust-guarantee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.trust-icon {
+  font-size: 1.4rem;
+  color: var(--text-main);
+}
+
+.trust-text h6 {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.trust-text p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .catalog-header-grid {
+    flex-direction: column;
+  }
+  .catalog-header-aside {
+    text-align: left;
+  }
+  .textile-guide-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pack-offer-banner {
+    grid-template-columns: 1fr;
+  }
+  .anatomy-cards-grid, .trust-guarantee-grid {
+    grid-template-columns: 1fr;
+  }
+}

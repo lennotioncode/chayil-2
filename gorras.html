@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gorras Daily Structure & Canvas — Chayil</title>
+  <meta name="description" content="Gorras de 6 paneles en sarga de algodón peinado y lonas lavadas a la piedra. Ajuste anatómico y hebilla de latón bruñido.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body data-page-category="gorras">
+
+  <!-- Barra Superior -->
+  <div class="top-announcement-bar">
+    ENVÍOS GRATUITOS EN PEDIDOS SUPERIORES A 65€ | CAMBIOS Y DEVOLUCIONES SENCILLAS
+  </div>
+
+  <!-- Cabecera -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button type="button" id="mobileMenuToggle" class="menu-toggle-btn" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="site-logo">
+        <span class="logo-brand">CHAYIL</span>
+        <span class="logo-tagline">— COLOMBIA —</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">INICIO</a></li>
+          <li><a href="coleccion.html" class="nav-link">COLECCIÓN</a></li>
+          <li><a href="camisetas.html" class="nav-link">CAMISETAS</a></li>
+          <li><a href="gorras.html" class="nav-link active">GORRAS</a></li>
+          <li><a href="sobre-chayil.html" class="nav-link">SOBRE CHAYIL</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="header-action-btn header-search-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <a href="bolsa.html" class="header-action-btn open-cart-drawer" aria-label="Bolsa">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-badge-count header-cart-badge">2</span>
+        </a>
+        <a href="sobre-chayil.html" class="header-action-btn" aria-label="Perfil">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Menú móvil">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <span class="logo-brand" style="font-size: 1.3rem;">CHAYIL</span>
+      <button type="button" class="mobile-menu-close" style="font-size: 1.6rem;">&times;</button>
+    </div>
+    <ul class="mobile-links">
+      <li><a href="index.html" class="nav-link">Inicio</a></li>
+      <li><a href="coleccion.html" class="nav-link">Colección Completa</a></li>
+      <li><a href="camisetas.html" class="nav-link">Camisetas Esenciales</a></li>
+      <li><a href="gorras.html" class="nav-link active">Gorras Daily Structure</a></li>
+      <li><a href="bolsa.html" class="nav-link">Bolsa de Compra</a></li>
+      <li><a href="sobre-chayil.html" class="nav-link">Sobre Chayil & Historia</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav" aria-label="Ruta de navegación">
+        <a href="coleccion.html">COLECCIÓN</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>GORRAS & ACCESORIOS DE CABEZA</span>
+      </nav>
+
+      <!-- Encabezado Hero Gorras -->
+      <section class="catalog-header-section" style="padding-bottom: 20px;">
+        <div class="catalog-header-grid" style="align-items: center;">
+          <div class="catalog-header-main" style="max-width: 580px;">
+            <div class="pill-tag" style="margin-bottom: 14px;">
+              <span class="pill-dot"></span>
+              <span>DISEÑO TÁCTIL & MINERAL</span>
+            </div>
+            <h1 class="catalog-main-title">Gorras Daily Structure & Canvas</h1>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-top: 18px;">
+              Patronaje clásico de 6 paneles en sarga de algodón y lonas lavadas a la piedra. Ajuste anatómico con hebilla de latón bruñido y viseras con curvatura orgánica pensadas para un uso silencioso y diario.
+            </p>
+          </div>
+
+          <div style="position: relative; max-width: 440px; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm);">
+            <img src="assets/images/gorras_hero.jpg" alt="Detalle de gorra washed en dunas">
+            <div style="position: absolute; bottom: 16px; left: 16px; right: 16px; display: flex; justify-content: space-between; align-items: center; background: rgba(250, 248, 245, 0.94); padding: 8px 14px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">
+              <span>TEJIDO 280 GSM • ACABADO LONA FINA</span>
+              <span>TALLA ÚNICA ANATÓMICA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabs Gorras -->
+      <div class="catalog-tabs-bar" style="margin-top: 20px;">
+        <button type="button" class="catalog-tab-btn active" data-filter="all">TODAS LAS GORRAS</button>
+        <button type="button" class="catalog-tab-btn" data-filter="dad-cap">DAD CAP LAVADA (6 PANELES)</button>
+        <button type="button" class="catalog-tab-btn" data-filter="low-profile">ESTRUCTURADA LOW PROFILE</button>
+        <button type="button" class="catalog-tab-btn" data-filter="canvas-sin-refuerzo">CANVAS SIN REFUERZO</button>
+        <button type="button" class="catalog-tab-btn" data-filter="ediciones-limitadas">EDICIONES LIMITADAS</button>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="catalog-toolbar">
+        <div class="toolbar-filters-group">
+          <button type="button" class="filter-dropdown-btn">TEJIDO: TODOS ⮟</button>
+          <button type="button" class="filter-dropdown-btn">TONO MINERAL ⮟</button>
+          <button type="button" class="filter-dropdown-btn">CIERRE: LATÓN BRUÑIDO ⮟</button>
+        </div>
+        <div class="toolbar-meta-group">
+          <span id="catalogItemCount">6 modelos en stock</span>
+          <div class="sort-select-wrapper">
+            <span>ORDENAR:</span>
+            <select id="sortSelect" class="sort-select" aria-label="Ordenar">
+              <option value="popular">MÁS POPULARES</option>
+              <option value="price-asc">PRECIO: MENOR A MAYOR</option>
+              <option value="price-desc">PRECIO: MAYOR A MENOR</option>
+              <option value="rating">MEJOR VALORADAS</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rejilla Dinámica de Gorras -->
+      <div class="products-grid-4" id="catalogProductsGrid">
+        <!-- Renderizado con js/catalog.js -->
+      </div>
+
+      <!-- Sección Técnica: Cómo Sienta Nuestra Gorra -->
+      <section style="padding: 90px 0 70px 0;">
+        <span style="display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px;">INGENIERÍA DE PATRÓN</span>
+        <h2 style="font-family: var(--font-heading); font-size: 2.3rem; font-weight: 500; margin-bottom: 12px;">Cómo Sienta Nuestra Gorra</h2>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; max-width: 600px; margin-bottom: 40px;">
+          Diseñamos piezas que no intentan destacar con logotipos estridentes, sino con la pureza de sus proporciones craneales y la calidez del material lavado.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+          <!-- Feature 1 -->
+          <div style="background-color: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-sm); overflow: hidden; display: flex; flex-direction: column;">
+            <div style="aspect-ratio: 16 / 10; background-color: var(--bg-card); overflow: hidden;">
+              <img src="assets/images/cap_feature_corona.jpg" alt="Corona anatómica media-baja" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1;">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; margin-bottom: 10px;">1. Corona Anatómica Media-Baja</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 20px;">
+                Abraza el contorno natural de la cabeza sin crear cámaras de aire en la parte superior ni presionar las sienes. Desciende con fluidez sobre la nuca.
+              </p>
+              <div style="margin-top: auto; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-main); padding-top: 12px; border-top: 1px solid var(--border-light); display: flex; align-items: center; gap: 6px;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20L12 2z"></path></svg> PERFIL 10.5 CM
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div style="background-color: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-sm); overflow: hidden; display: flex; flex-direction: column;">
+            <div style="aspect-ratio: 16 / 10; background-color: var(--bg-card); overflow: hidden;">
+              <img src="assets/images/cap_feature_visera.jpg" alt="Curvatura natural de visera" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1;">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; margin-bottom: 10px;">2. Curvatura Natural de Visera</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 20px;">
+                Viene pre-moldeada con un arco suave que no bloquea la visión periférica. El núcleo interno es flexible y recupera su forma original si se guarda en equipaje.
+              </p>
+              <div style="margin-top: auto; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-main); padding-top: 12px; border-top: 1px solid var(--border-light); display: flex; align-items: center; gap: 6px;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"></path><path d="M11 19h8.2a1.8 1.8 0 0 0 1.564-.91 1.79 1.79 0 0 0 .016-1.79l-3.93-6.8"></path><path d="M9 5l3-3 3 3"></path><path d="M12 2v10"></path></svg> NÚCLEO DE POLÍMERO RECICLADO
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div style="background-color: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-sm); overflow: hidden; display: flex; flex-direction: column;">
+            <div style="aspect-ratio: 16 / 10; background-color: var(--bg-card); overflow: hidden;">
+              <img src="assets/images/cap_feature_hebilla.jpg" alt="Hebilla de latón bruñido" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1;">
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600; margin-bottom: 10px;">3. Hebilla de Latón Bruñido</h4>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 20px;">
+                Herraje metálico con pátina mate que envejece con carácter. Permite un ajuste milimétrico limpio con ojal oculto para esconder la tira sobrante.
+              </p>
+              <div style="margin-top: auto; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-main); padding-top: 12px; border-top: 1px solid var(--border-light); display: flex; align-items: center; gap: 6px;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> SIN CIERRES PLÁSTICOS
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Manifiesto Oscuro Gorras -->
+      <section style="background-color: #121211; color: #FFFFFF; border-radius: var(--radius-sm); padding: 70px 60px; margin: 40px 0 80px 0; display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; flex-wrap: wrap;">
+        <div style="max-width: 640px;">
+          <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #A09A8F; display: block; margin-bottom: 14px;">CONFECCIÓN MEDITADA</span>
+          <blockquote style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 500; line-height: 1.25;">
+            “Una gorra no debería ser un escaparate de logotipos. Debe ser una extensión de tu día a día: resistente al salitre, al sol y al tiempo.”
+          </blockquote>
+        </div>
+        <div style="text-align: right; font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; color: #A09A8F;">
+          <strong style="color: #FFFFFF; display: block; margin-bottom: 4px;">TALLER DE SARGA CHAYIL</strong>
+          <span>Colombia</span>
+        </div>
+      </section>
+
+      <!-- Reseñas Gorras -->
+      <section style="padding-bottom: 70px;">
+        <div class="reviews-header">
+          <div>
+            <span class="reviews-subhead">OPINIONES CONTRASTADAS</span>
+            <h2 class="reviews-title">Experiencias sobre el Terreno</h2>
+          </div>
+          <div class="reviews-aggregate">
+            <span class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
+            <span><strong>4.9 / 5</strong> (142 reseñas de gorras)</span>
+          </div>
+        </div>
+        <div class="reviews-grid-3">
+          <article class="review-card">
+            <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+            <p class="review-body">“Llevo años buscando una gorra que no me quede como un casco rígido. El modelo Duna Washed se adapta a la cabeza desde el minuto uno. El tono arena combina con cualquier camisa de lino.”</p>
+            <div class="review-author">
+              <div class="author-meta">
+                <strong>Mateo R.</strong>
+                <span>Compró Gorra Daily Canvas Duna • Comprador verificado</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+            <p class="review-body">“La hebilla de latón es una maravilla de manufactura. No se oxida con el sudor ni tira del pelo. Se nota que han cuidado la cinta interna para que no deje marcas en la frente.”</p>
+            <div class="review-author">
+              <div class="author-meta">
+                <strong>Clara V.</strong>
+                <span>Compró Gorra 6 Paneles Sal Marina • Comprador verificado</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+            <p class="review-body">“El color arcilla tostada es exactamente como en las fotografías. Ha sobrevivido dos lavados a mano sin desteñir de forma irregular. Vale cada euro.”</p>
+            <div class="review-author">
+              <div class="author-meta">
+                <strong>Guillermo S.</strong>
+                <span>Compró Dad Cap Arcilla Lavada • Comprador verificado</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Cuidados de la Lona -->
+      <section class="prefooter-care-banner">
+        <div class="prefooter-care-left">
+          <span class="prefooter-care-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          </span>
+          <div class="prefooter-care-text">
+            <strong>Cuidado de la Lona & Visera</strong>
+            <span>Lavar en frío a mano con jabón neutro. Secar al aire en superficie horizontal para preservar la curvatura natural de la visera.</span>
+          </div>
+        </div>
+        <button type="button" class="btn-secondary" onclick="window.chayilUI.openCareGuide()">GUÍA COMPLETA DE CUIDADOS</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer Completo -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>CHAYIL</h4>
+          <p>Ropa esencial y piezas seleccionadas con calma mediterránea. Sostenibilidad, materiales naturales y arquitectura textil creada para perdurar en el tiempo.</p>
+          <span class="footer-badge-ethical">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12c0-3.35 1.64-6.31 4.15-8.15"></path><path d="M12 2v20"></path></svg>
+            ALGODÓN 100% ORGÁNICO & ÉTICO
+          </span>
+        </div>
+        <div class="footer-col">
+          <h5>EXPLORAR</h5>
+          <ul>
+            <li><a href="coleccion.html">Nueva Temporada</a></li>
+            <li><a href="camisetas.html">Camisetas Pesadas</a></li>
+            <li><a href="gorras.html">Gorras de Algodón</a></li>
+            <li><a href="sobre-chayil.html">Nuestro Taller</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>AYUDA & CONTACTO</h5>
+          <ul>
+            <li><a href="sobre-chayil.html#showroom">Preguntas Frecuentes</a></li>
+            <li><a href="camisetas.html#guia-tallas">Guía de Tallas</a></li>
+            <li><a href="bolsa.html">Estado del Pedido</a></li>
+            <li><a href="sobre-chayil.html#contacto">Contacto Directo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter-box">
+          <h5>BOLETÍN CONSCIENTE</h5>
+          <p>Recibe lanzamientos cápsula y reflexiones sobre diseño atemporal.</p>
+          <form class="footer-input-wrapper newsletter-form">
+            <input type="email" placeholder="Introduce tu correo" required aria-label="Correo para newsletter">
+            <button type="submit" aria-label="Suscribirse">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>© 2025 Chayil Essentials. Todos los derechos reservados.</span>
+        <div class="payment-methods-text">
+          <span>VISA</span><span>MASTERCARD</span><span>APPLE PAY</span><span>KLARNA</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
